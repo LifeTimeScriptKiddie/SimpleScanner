@@ -1,8 +1,8 @@
 #!/bin/bash
 
 IP_addresses=(
-# '192.168.177.105'
- '192.168.49.177'
+# 'IP 1 here'
+# 'IP 2 here'
 # 'IP 3 here'
 # 'IP 4 here'
 )
