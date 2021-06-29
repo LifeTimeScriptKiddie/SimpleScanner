@@ -46,11 +46,11 @@ do
   sleep 5;
   
   echo "################## Running FFUF on http://$ip:$port ######################"
-  ffuf -u http://$ip:$port/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-large-directories.txt |tee ./$ip/recon/$port.ffuf
+  ffuf -u http://$ip:$port/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-large-directories.txt |tee ./$ip/recon/$port.ffuf;
 
 
-  echo "#################  Running NIKTO on http://$ip:$port  #######################"
-  nikto -h http://$ip:$port |tee ./$ip/recon/$port.nikto
+#  echo "#################  Running NIKTO on http://$ip:$port  #######################"
+#  nikto -h http://$ip:$port |tee ./$ip/recon/$port.nikto
 
   done 
 done
